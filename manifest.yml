@@ -1,0 +1,10 @@
+---
+applications:
+- name: demo-java
+  memory: 1g
+  buildpacks:
+   - paketo-buildpacks/java
+  env:
+    PROFILE: development
+    JAVA_OPTS: "-Dspring.profiles.active=${PROFILE} -Dserver.port=${PORT}"
+    BP_JVM_VERSION: 11 #To explicitly set Java Version

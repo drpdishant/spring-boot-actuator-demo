@@ -13,6 +13,16 @@ pipeline {
                         echo "Parallel 2"
                     }
                 }
+                stage('Test Parallel 3') {
+                    steps {
+                        echo "Parallel 3"
+                    }
+                }
+                stage('Test Parallel 4') {
+                    steps {
+                        echo "Parallel 4"
+                    }
+                }
             }
         }
         stage("Stage 2") {

@@ -1,0 +1,26 @@
+{
+   "containerDefinitions": [ 
+      { 
+         "essential": true,
+         "image": "__IMAGE__URI__",
+         "name": "actuator",
+         "portMappings": [ 
+            { 
+               "containerPort": 8080,
+               "hostPort": 8080,
+               "protocol": "tcp"
+            }
+         ]
+      }
+   ],
+   "cpu": "256",
+   "family": "spring-boot-actuator",
+   "memory": "512",
+   "networkMode": "awsvpc",
+   "runtimePlatform": {
+        "operatingSystemFamily": "LINUX"
+    },
+   "requiresCompatibilities": [ 
+       "FARGATE" 
+    ]
+}
